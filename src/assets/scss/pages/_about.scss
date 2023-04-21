@@ -1,0 +1,67 @@
+.about__block-left p {
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.swiper-navigation {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.swiper-nav:before {
+    content: "";
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1IDE4TDkgMTJMMTUgNiIgc3Ryb2tlPSIjODY5REE4IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.swiper-nav-next {
+    margin-left: 12px;
+}
+
+.swiper-nav-next::before {
+    transform: rotate(180deg);
+}
+
+.about__block-right {
+    margin-top: 30px;
+}
+
+.about__block-title {
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.about__clients-item {
+    padding: 7px 28px;
+    background: #FFFFFF;
+    text-align: center;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+}
+
+.about__reviews {
+    margin-top: 15px;
+}
+
+.about__reviews .about__block-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__reviews .about__block-title a {
+    text-decoration-line: underline;
+    color: #869DA8;
+}

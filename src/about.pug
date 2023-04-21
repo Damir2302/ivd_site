@@ -1,0 +1,71 @@
+---
+title: IVD | О компании
+---
+
+extends includes/_page
+
+block main
+
+    .about-page
+
+        include components/_hero
+        +hero('close-up-scientist-holding-glassware.jpg', 'О компании', 'О компании')
+
+        
+        section.about-info
+
+            .container
+
+                .about__block
+
+                    .about__block-left
+        
+                        p ООО «ИВД Консалтинг» - компания, оказывающая широкий спектр услуг в сфере обращения медицинских изделий для диагностики in vitro.
+                          br
+                          br
+                          |Медицинские изделия для лабораторной диагностики – наше ключевое направление, мы глубоко разбираемся в особенностях данных медицинских изделий и всегда качественно делаем работу с заботой об интересах наших клиентов.
+                          br
+                          br
+                          |У нас выстроились долгосрочные и доверительные отношения с ведущими производителями и поставщиками медицинских изделий для лабораторной диагностики.
+
+                    .about__block-right
+
+                        .about__clients
+                            .about__block-title
+                                p Клиенты
+                            
+                            .swiper
+                                .swiper-wrapper
+                                    .about__clients-item.swiper-slide
+                                        img(src="assets/images/image-15.svg", alt="img")
+                                    .about__clients-item.swiper-slide
+                                        img(src="assets/images/image-16.svg", alt="img")
+                                    .about__clients-item.swiper-slide
+                                        img(src="assets/images/image-15.svg", alt="img")
+                                    .about__clients-item.swiper-slide
+                                        img(src="assets/images/image-16.svg", alt="img")
+                                
+                                .swiper-navigation
+                                    .swiper-nav.swiper-nav-prev
+                                    .swiper-nav.swiper-nav-next
+
+                        .about__reviews
+                            .about__block-title
+                                p Отзывы
+                                a(href="reviews.html") Все отзывы
+
+                            .swiper
+                                .swiper-wrapper
+                                    .about__reviews-item.swiper-slide
+                                        img(src="assets/images/image-18.jpg", alt="img")
+                                    .about__reviews-item.swiper-slide
+                                        img(src="assets/images/image-18.jpg", alt="img")
+                                    .about__reviews-item.swiper-slide
+                                        img(src="assets/images/image-18.jpg", alt="img")
+                                    .about__reviews-item.swiper-slide
+                                        img(src="assets/images/image-18.jpg", alt="img")
+
+                                .swiper-navigation
+                                    .swiper-nav.swiper-nav-prev
+                                    .swiper-nav.swiper-nav-next
+

@@ -1,0 +1,104 @@
+.hero {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 250px;
+
+    @include breakpoint(md) {
+        padding-top: 75px;
+        padding-bottom: 40px;
+        position: relative;
+        justify-content: center;
+        min-height: 450px;
+    }
+}
+
+.hero::before {
+    content: '';
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.34) 99.86%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    @include breakpoint(md) {
+        background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 96.93%);
+    }
+}
+
+.hero .container {
+    width: 100%;
+}
+
+.page-title h1 {
+    position: relative;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    z-index: 1;
+
+    @include breakpoint(md) {
+        font-size: 40px;
+        line-height: 115%;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 50px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 60px;
+    }
+}
+
+.breadcrumbs {
+
+    @include breakpointMax(md) {
+        position: relative;
+        display: none;
+        z-index: 1;
+    }
+
+    @include breakpoint(md) {
+        position: absolute;
+        left: 0;
+        bottom: 18px;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+.breadcrumbs-wrapper {
+
+    @include breakpoint(md) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.breadcrumbs-item {
+    font-size: 16px;
+    line-height: 140%;
+    color: #869DA8;
+}
+
+.breadcrumbs-item span {
+    cursor: default;
+}
+
+.breadcrumbs-separator {
+    margin: 0 8px;
+    background: #869DA8;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}

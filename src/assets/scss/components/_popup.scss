@@ -1,0 +1,171 @@
+.popup-form {
+    padding: 80px 20px 50px;
+    background: #869DA8;
+    display: none;
+    width: 100%;
+    cursor: default!important;
+
+    @include breakpoint(xs) {
+        padding: 90px 30px 50px;
+    }
+
+    @include breakpoint(sm) {
+        padding: 90px 30px 98px;
+        width: auto;
+        height: auto;
+    }
+}
+
+.popup-form .carousel__button.is-close {
+    top: 26px;
+    right: 26px;
+}
+
+.fancybox__slide {
+    padding: 0;
+}
+
+.popup-form__title {
+    max-width: 540px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.popup-form__subtitle {
+    margin-top: 12px;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.p-form__container {
+    max-width: 540px;
+}
+
+.p-form-row ~ .p-form-row {
+    margin-top: 15px;
+}
+
+.input-style input {
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.input-style input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #686868;
+}
+
+.textarea-style textarea::placeholder {
+    text-transform: uppercase;
+}
+
+.textarea-style textarea {
+    margin-top: 15px;
+    padding: 20px;
+    background: #FFFFFF;
+    height: 188px;
+    border-radius: 5px;
+}
+
+.popup-form .button-style {
+    margin: 20px auto 0;
+    width: 100%;
+    height: 60px;
+    max-width: 331px;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.agreement {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F4F4F4;
+}
+
+.agreement a {
+    text-decoration: underline;
+}
+
+.popup-success {
+    background: #869DA8;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    cursor: default!important;
+
+    @include breakpoint(sm) {
+        max-width: 600px;
+        max-height: 540px;
+    }
+}
+
+.popup-success .carousel__button.is-close {
+    top: 26px;
+    right: 26px;
+}
+
+.popup-error {
+    background: #869DA8;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    cursor: default!important;
+
+    @include breakpoint(sm) {
+        max-width: 600px;
+        max-height: 540px;
+    }
+}
+
+.popup-contacts {
+    margin-top: 90px;
+    color: #fff;
+    text-align: center;
+}
+
+.popup-contacts-title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.popup-contacts-label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #B5C7D3;
+}
+
+.popup-contacts-phone {
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.popup-contacts-mail {
+    font-size: 18px;
+}
+
+.popup-error .carousel__button.is-close {
+    top: 26px;
+    right: 26px;
+}

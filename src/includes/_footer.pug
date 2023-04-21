@@ -2,3 +2,64 @@ include _mixins
 block footer
 
     footer#footer.footer
+
+        .container
+
+            .footer__inner
+
+                .footer__logo
+                    a(href="/")
+                        img(src="assets/images/logo-white.svg", alt="logo")
+
+                .footer__menu
+                    ul
+                        li
+                            a(href="about.html") Компания
+                        li
+                            a(href="articles.html") Полезные материалы
+                        li
+                            a(href="reviews.html") Отзывы
+                        li
+                            a(href="contacts.html") Контакты
+
+                .footer__nav
+                    ul
+                        li.footer__nav-item
+                            a.footer__nav-link(href="services.html") Услуги
+
+                            ul.footer__nav-submenu
+                                li.footer__nav-submenu-item
+                                    a(href="#") Регистрация медицинских изделий для диагностики in vitro
+                                li.footer__nav-submenu-item
+                                    a(href="#") Организация технических испытаний
+                                li.footer__nav-submenu-item
+                                    a(href="#") Организация токсикологических исследований
+                                li.footer__nav-submenu-item
+                                    a(href="#") Организация клинических испытаний
+                                li.footer__nav-submenu-item
+                                    a(href="#") Проверка технической и эксплуатационной документации
+                                li.footer__nav-submenu-item
+                                    a(href="#") Консультации по вопросам обращения&nbsp;МИ в&nbsp;России и ЕАЭС
+
+                .footer__contacts
+                    
+                    .footer__phone
+                        span Тел.
+                        a(href="tel:+7 (495) 198-08-92") +7 (495) 198-08-92
+                        .button-style.button-style--transparent(href="#popup-callback" data-fancybox) Заказать звонок
+                    
+                    .footer__address
+                        .footer__address-email
+                            span Почта
+                            a(href="mailto:info@ivdconsult.ru") info@ivdconsult.ru
+
+                        .footer__address-address
+                            span Адрес
+                            p Москва, Тетеринский переулок, дом 12, стр. 2, офис 211
+
+                .footer__bottom
+                    
+                    .footer__copyright © 2023 ООО «ИВД Консалтинг».<br>Все права защищены
+                    
+                    .footer__policy
+                        a(href="#") Политика конфиденциальности

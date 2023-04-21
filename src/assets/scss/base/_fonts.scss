@@ -1,9 +1,40 @@
+@font-face {
+	font-family: 'Geometria';
+	src: url('../fonts/Geometria.eot');
+	src: local('../fonts/Geometria'),
+		url('../fonts/Geometria.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria.woff') format('woff'),
+		url('../fonts/Geometria.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@font-face {
+	font-family: 'Geometria';
+	src: url('../fonts/Geometria-Medium.eot');
+	src: local('../fonts/Geometria Medium'), local('Geometria-Medium'),
+		url('../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria-Medium.woff') format('woff'),
+		url('../fonts/Geometria-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
 
-  body {
-    font-family: 'Inter', sans-serif;
+@font-face {
+	font-family: 'Geometria';
+	src: url('../fonts/Geometria-Bold.eot');
+	src: local('../fonts/Geometria Bold'), local('Geometria-Bold'),
+		url('../fonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria-Bold.woff') format('woff'),
+		url('../fonts/Geometria-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+    font-family: 'Geometria', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #353535;
+    line-height: 1.5;
+    color: #262626;
 }

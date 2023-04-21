@@ -2,3 +2,31 @@ include _mixins
 block header
 
     header#header.header
+
+        .container
+
+            .header__inner
+
+                .header__logo
+                    a(href="/")
+                        img(src="assets/images/logo.svg", alt="logo")
+
+                nav.navbar
+                    ul
+                        li
+                            a(href="about.html") Компания
+                        li
+                            a(href="services.html") Услуги
+                        li
+                            a(href="articles.html") Полезные материалы
+                        li
+                            a(href="reviews.html") Отзывы
+                        li
+                            a(href="contacts.html") Контакты
+
+                .header__right
+                    .header__phone
+                        span Тел.
+                        a(href="tel:+7 (495) 198 08 92") +7 (495) 198 08 92
+
+                    .header__burger

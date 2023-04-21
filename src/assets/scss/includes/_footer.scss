@@ -1,0 +1,290 @@
+.footer {
+    padding: 40px 0;
+    background: #869DA8;
+    color: #fff;
+
+    @include breakpoint(md) {
+        padding: 60px 0;
+    }
+
+    @include breakpoint(xl) {
+        padding: 70px 0;
+    }
+}
+
+.footer__inner {
+
+    @include breakpoint(md) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @include breakpoint(lg) {
+        position: relative;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 40px;
+    width: 132px;
+
+    @include breakpoint(md) {
+        width: calc(100% / 12 * 3 - 30px);
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 12 * 2 - 25px);
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 0;
+        width: 168px;
+    }
+}
+
+.footer__menu {
+    
+    @include breakpoint(md) {
+        margin-left: 44px;
+        width: calc(100% / 12 * 2 - 14px);
+    }
+
+    @include breakpoint(lg) {
+        margin-left: 110px;
+        width: calc(100% / 12 * 1 + 12px);
+    }
+}
+
+.footer__menu ul li ~ li {
+    margin-top: 12px;
+
+    @include breakpoint(lg) {
+        margin-top: 16px;
+    }
+}
+
+.footer__menu ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include breakpoint(xl) {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+.footer__nav {
+    margin-top: 20px;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        margin-left: 28px;
+        width: calc(100% / 12 * 6 - 24px);
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 12 * 4);
+    }
+}
+
+.footer__nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.footer__nav-submenu-item {
+    margin-top: 12px;
+
+    @include breakpoint(lg) {
+        margin-top: 16px;
+    }
+}
+
+.footer__nav-submenu-item a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+    @include breakpoint(xl) {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+.footer__contacts {
+    margin-top: 40px;
+
+    @include breakpoint(md) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 0;
+        margin-left: 55px;
+        display: block;
+        width: calc(100% / 12 * 3 - 24px);
+    }
+}
+
+.footer__phone {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+        width: calc(100% / 12 * 5 - 30px);
+    }
+
+    @include breakpoint(lg) {
+        width: auto;
+    }
+}
+
+.footer__phone span {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.footer__phone a {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include breakpoint(xl) {
+        font-size: 18px;
+    }
+}
+
+.footer__phone .button-style {
+    padding: 12px 18px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    border-color: #fff;
+}
+
+.footer__address {
+    margin-top: 25px;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        width: calc(100% / 12 * 7 - 28px);
+    }
+
+    @include breakpoint(lg) {
+        width: auto;
+    }
+}
+
+.footer__address-email {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @include breakpoint(lg) {
+        margin-top: 20px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 30px;
+    }
+}
+
+.footer__address-email span {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.footer__address-email a {
+    font-size: 16px;
+    line-height: 150%;
+
+    @include breakpoint(xl) {
+        font-size: 20px;
+    }
+}
+
+.footer__address-address {
+    margin-top: 25px;
+
+    @include breakpoint(lg) {
+        margin-top: 20px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 30px;
+    }
+}
+
+.footer__address-address span {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+} 
+
+.footer__address-address p {
+    font-size: 16px;
+    line-height: 150%;
+
+    @include breakpoint(xl) {
+        font-size: 20px;
+    }
+}
+
+.footer__bottom {
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 18px;
+
+    @include breakpoint(md) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        max-width: 172px;
+    }
+}
+
+.footer__copyright {
+
+    @include breakpoint(md) {
+        width: calc(100% / 12 * 5 - 30px);
+    }
+
+    @include breakpoint(lg) {
+        width: auto;
+    }
+}
+
+.footer__policy {
+    margin-top: 20px;
+    
+    @include breakpoint(md) {
+        margin-top: 0;
+        width: calc(100% / 12 * 7 - 28px);
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 20px;
+        width: auto;
+    }
+}

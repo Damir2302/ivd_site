@@ -37,3 +37,75 @@ html(lang="ru")
         // Scripts::Start
         include _loadScripts
         // Scripts::End
+
+        // Popup-1::Start
+        .popup-form#popup-form
+
+            .popup-form__title Заполните форму и мы свяжемся с вами в ближайшее время
+
+            .form
+                form(action="/")
+
+                    .p-form__container
+
+                        .p-form__main
+
+                            .p-form-row
+                                .input-style
+                                    input(type="text" placeholder="Имя" autocomplete="off")
+
+                            .p-form-row
+                                .input-style
+                                    input(type="tel" placeholder="Телефон" autocomplete="off")
+
+                            .textarea-style
+                                textarea(type="text" placeholder="Комментарий")
+
+                            button.button-style.button-style--black.wpcf7-form-control.wpcf7-submit(type="submit" tabindex="0") Оставить заявку
+
+                            .agreement Нажимая на кнопку “отправить заявку”, вы соглашаетесь на обработку <a href="#">персональных данных</a>
+        // Popup-1::End
+
+        // Popup-2::Start
+        .popup-form#popup-callback
+
+            .popup-form__title Заказать звонок
+
+            .form
+                form(action="/")
+
+                    .p-form__container
+
+                        .p-form__main
+
+                            .p-form-row
+                                .input-style
+                                    input(type="text" placeholder="Имя" autocomplete="off")
+
+                            .p-form-row
+                                .input-style
+                                    input(type="tel" placeholder="Телефон *" autocomplete="off")
+
+                            button.button-style.button-style--black.wpcf7-form-control.wpcf7-submit(type="submit" tabindex="0") Отправить
+
+                            .agreement Нажимая на кнопку “отправить заявку”, вы соглашаетесь на обработку <a href="#">персональных данных</a>
+        // Popup-2::End
+
+        // Popup SUCCESS::Start
+        #popup-success.popup-success
+            .popup-form__title Спасибо!
+            .popup-form__subtitle Ваша заявка оставлена
+        // Popup SUCCESS::End
+
+        // Popup ERROR::Start
+        #popup-error.popup-error
+            .popup-form__title Ошибка
+            .popup-form__subtitle Что-то пошло не так
+
+            .popup-contacts
+                .popup-contacts-title Свяжитесь с нами
+                .popup-contacts-label Телефон
+                a.popup-contacts-phone(href="tel:+7 (495) 198 08 92") +7 (495) 198 08 92
+                .popup-contacts-label e-mail
+                a.popup-contacts-mail(href="mailto:info@ivdconsult.ru") info@ivdconsult.ru
+        // Popup ERROR::End

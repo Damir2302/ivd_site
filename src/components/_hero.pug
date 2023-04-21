@@ -1,0 +1,31 @@
+mixin hero(img, title, ...items)
+
+    .hero(style="background-image: url('assets/images/" + img + "')")
+
+        if title != ''
+            .page-title
+
+                .container
+
+                    h1= title
+
+        .breadcrumbs
+            
+            .container
+
+                .breadcrumbs-wrapper
+
+                    .breadcrumbs-item
+                        a(href='/') Главная
+
+                    each item in items
+
+                        if item == items[items.length - 1]
+                            span.breadcrumbs-separator
+                            .breadcrumbs-item
+                                span= item
+
+                        else
+                            span.breadcrumbs-separator
+                            .breadcrumbs-item
+                                a(href="#")= item
