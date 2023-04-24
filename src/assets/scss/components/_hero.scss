@@ -90,13 +90,19 @@
     color: #869DA8;
 }
 
+.breadcrumbs-item:not(:last-child) {
+    flex-shrink: 0;
+}
+
 .breadcrumbs-item span {
     cursor: default;
+    @include textLimit(1)
 }
 
 .breadcrumbs-separator {
     margin: 0 8px;
     background: #869DA8;
+    flex-shrink: 0;
     display: inline-block;
     width: 4px;
     height: 4px;
