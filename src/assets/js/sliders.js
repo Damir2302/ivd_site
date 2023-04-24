@@ -28,19 +28,20 @@ $(document).ready(function() {
         loop: true,
 
         breakpoints: {
-            480: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
 
             744: {
                 slidesPerView: 2,
-                spaceBetween: 30,
+                spaceBetween: 8,
+                grid: false
             },
 
-            1400: {
-                slidesPerView: 2,
-                spaceBetween: 40,
+            
+            1024: {
+                slidesPerView: 1,
+                spaceBetween: 8,
+                grid: {
+                    rows: 2
+                }
             }
         },
 
@@ -51,24 +52,15 @@ $(document).ready(function() {
     })
 
     let aboutReviewsSlider = new Swiper('.about__reviews .swiper', {
-        slidesPerView: 'auto',
+        slidesPerView: 2,
         spaceBetween: 10,
         loop: true,
 
         breakpoints: {
-            480: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
 
             744: {
                 slidesPerView: 2,
-                spaceBetween: 30,
-            },
-
-            1400: {
-                slidesPerView: 2,
-                spaceBetween: 40,
+                spaceBetween: 8,
             }
         },
 
