@@ -383,7 +383,6 @@
 
 .services__other-list li:hover {
     color: #869DA8;
-    cursor: default;
 }
 
 .services__other-list li ~ li {
@@ -405,7 +404,7 @@
     height: 32px;
 }
 
-.services__other-list li span {
+.services__other-list li a {
     font-size: 16px;
     line-height: 140%;
     

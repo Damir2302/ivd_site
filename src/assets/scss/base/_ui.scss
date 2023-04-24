@@ -104,6 +104,18 @@ section {
   }
 }
 
+.section-page {
+  padding-bottom: 50px;
+
+  @include breakpoint(lg) {
+      padding-bottom: 60px;
+  }
+
+  @include breakpoint(xl) {
+      padding-bottom: 120px;
+  }
+}
+
 input {
   background: transparent;
   width: 100%;

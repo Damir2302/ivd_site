@@ -340,6 +340,10 @@
     @include breakpoint(lg) {
         padding-bottom: 60px;
     }
+
+    @include breakpoint(xl) {
+        padding-bottom: 120px;
+    }
 }
 
 .requisites {
