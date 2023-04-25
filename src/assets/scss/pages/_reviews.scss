@@ -1,0 +1,137 @@
+.reviews-page {
+	padding-bottom: 40px;
+
+	@include breakpoint(md) {
+		padding-bottom: 50px;
+	}
+
+	@include breakpoint(lg) {
+		padding-bottom: 60px;
+	}
+
+	@include breakpoint(xl) {
+		padding-bottom: 100px;
+	}
+}
+
+.reviews-page-items {
+}
+.container {
+}
+.reviews-page__items {
+	display: flex;
+	flex-wrap: wrap;
+    margin-left: -20px;
+
+    @include breakpoint(lg) {
+        margin-left: -30px;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: -40px;
+    }
+
+}
+.reviews__item {
+	width: 100%;
+	margin-bottom: 20px;
+    cursor: pointer;
+    width: calc(100% / 2 - 20px);
+    margin-left: 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+	overflow: hidden;
+
+	@include breakpoint(md) {
+		margin-left: 20px;
+		width: calc(100% / 3 - 20px);
+		margin-bottom: 20px;
+	}
+
+    @include breakpoint(lg) {
+        margin-left: 30px;
+		width: calc(100% / 3 - 30px);
+        margin-bottom: 30px;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 40px;
+		width: calc(100% / 3 - 40px);
+        margin-bottom: 40px;
+    }
+
+}
+.reviews__item-img {
+}
+
+.reviews-clients {
+    margin-top: 50px;
+
+    @include breakpoint(lg) {
+        margin-top: 60px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 120px;
+    }
+}
+
+.reviews-clients__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+
+    @include breakpoint(md) {
+        margin-left: -20px;
+    }
+
+    @include breakpoint(lg) {
+        margin-left: -30px;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: -40px;
+    }
+
+}
+
+.reviews-clients__item {
+    width: calc(100% / 2 - 10px);
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    padding: 5px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    @include breakpoint(md) {
+        width: calc(100% / 4 - 20px);
+        margin-left: 20px;
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 4 - 30px);
+        margin-left: 30px;
+    }
+
+    @include breakpoint(xl) {
+        width: calc(100% / 4 - 40px);
+        margin-left: 40px;
+    }
+
+}
+
+.reviews-clients__item-img {
+    width: 100%;
+    height: 100%;
+}
