@@ -1,9 +1,246 @@
+.services-inner-page .page-title h1 {
+
+    @include breakpoint(md) {
+        max-width: calc(100% / 12 * 9);
+    }
+
+    @include breakpoint(xl) {
+        max-width: 816px;
+    }
+}
+
+.services-inner {
+
+    @include breakpoint(lg) {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
 .services-inner__aside {
     padding: 15px;
     background: #F4F4F4;
     border-radius: 5px;
+
+    @include breakpoint(md) {
+        padding: 20px;
+    }
+
+    @include breakpoint(lg) {
+        margin-right: 30px;
+        padding: 30px 20px;
+        flex-shrink: 0;
+        width: 376px;
+    }
+
+    @include breakpoint(xl) {
+        margin-right: 40px;
+        width: 373px;
+    }
 }
 
-.services__other-list li.active {
+.aside__title {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+
+    @include breakpoint(md) {
+        margin-bottom: 20px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 25px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 28px;
+        font-size: 25px;
+        line-height: 31px;
+    }
+}
+
+.aside__list {
+    position: relative;
+    max-height: 95px;
+    overflow: hidden;
+    transition: all .3s ease;
+
+    @include breakpoint(md) {
+        max-height: 40px;
+    }
+
+    @include breakpoint(lg) {
+        max-height: unset;
+    }
+}
+
+.aside__list.open {
+    max-height: 1000px;
+}
+
+.aside__list li {
+    padding: 10px 0;
+    display: flex;
+    border-top: 1px solid #E3E3E3;
+}
+
+.aside__list li:first-child {
+    border: none;
+}
+
+.aside__list li.active {
     color: #869DA8;
+}
+
+.aside__list-icon {
+    margin-right: 20px;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+}
+
+.aside__list li a {
+    font-size: 16px;
+    line-height: 140%;
+
+    @include breakpoint(xl) {
+        font-size: 18px;
+    }
+}
+
+.aside__list li:first-child a {
+    
+    @include breakpointMax(md) {
+        max-width: 180px;
+    }
+}
+
+.aside__list-icon-mob {
+    position: absolute;
+    top: 32px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    @include breakpoint(md) {
+        top: 12px;
+    }
+
+    @include breakpoint(lg) {
+        display: none;
+    }
+}
+
+.aside__list.open .aside__list-icon-mob {
+    transform: rotate(180deg);
+}
+
+.services-inner__content {
+    margin-top: 30px;
+
+    @include breakpoint(md) {
+        width: calc(100% / 12 * 10);
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 0;
+    }
+
+    @include breakpoint(xl) {
+        width: 787px;
+    }
+}
+
+.services-inner__title {
+    margin-bottom: 30px;
+
+    @include breakpoint(xl) {
+        margin-bottom: 40px;
+    }
+}
+
+.services-inner__content ul {
+    counter-reset: nums;
+}
+
+.services-inner__content li {
+    margin-bottom: 28px;
+
+    @include breakpoint(xl) {
+        margin-bottom: 32px;
+    }
+}
+
+.services-inner__content li h4 {
+    margin-bottom: 15px;
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+
+    @include breakpoint(md) {
+        line-height: 31px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+}
+
+.services-inner__content li h4::before {
+    content: counter(nums) ".";
+    counter-increment: nums;
+    margin-right: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #869DA8;
+
+    @include breakpoint(md) {
+        font-size: 25px;
+        line-height: 31px;
+    }
+}
+
+.services-inner__content li p {
+    font-size: 16px;
+    line-height: 140%;
+
+    @include breakpoint(xl) {
+        font-size: 18px;
+    }
+}
+
+.services__block-info {
+    padding: 30px 20px;
+    background: #F4F4F4;
+    border-radius: 10px;
+}
+
+.services__block-info h4 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+
+    @include breakpoint(xl) {
+        font-size: 25px;
+        line-height: 31px;
+    }
+}
+
+.services__block-info p {
+    font-size: 16px;
+    line-height: 140%;
+
+    @include breakpoint(xl) {
+        font-size: 18px;
+    }
 }
