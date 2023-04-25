@@ -1,0 +1,49 @@
+.contacts-page section {
+
+    @include breakpoint(xl) {
+        margin-top: 60px;
+    }
+}
+
+.contacts__block {
+    padding: 20px;
+    background: #F4F4F4;
+    border-radius: 10px;
+}
+
+.contacts__block-item {
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contacts__block-item:first-child {
+    margin-top: 0;
+}
+
+.contacts__block-item span {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #869DA8;
+}
+
+.contacts__block-item p,
+.contacts__block-item a {
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.contacts__block-item:first-child a {
+    font-weight: 500;
+}
+
+.contacts__map {
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
