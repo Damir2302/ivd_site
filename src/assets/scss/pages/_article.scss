@@ -75,6 +75,11 @@
 	margin-top: 15px;
 	margin-bottom: 40px;
 	color: #869da8;
+
+    @include breakpoint(md) {
+        margin-top: 30px;
+    }
+
 }
 .article-detail__img {
 	border-radius: 5px;
