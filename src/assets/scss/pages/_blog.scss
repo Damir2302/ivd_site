@@ -1,0 +1,121 @@
+.blog-page {
+
+    padding-bottom: 40px;
+
+    @include breakpoint(md) {
+        padding-bottom: 50px;
+    }
+
+    @include breakpoint(lg) {
+        padding-bottom: 60px;
+    }
+
+    @include breakpoint(xl) {
+        padding-bottom: 100px;
+    }
+
+
+}
+
+.blog-list-page-wrapper {
+}
+.container {
+}
+.blog-list-page {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(lg) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+.blog-list__items-wrapper {
+    @include breakpoint(lg) {
+        width: calc( 100% / 12 * 7.5 );
+    }
+}
+.blog__list-items {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint(md) {
+        margin-left: -20px;
+    }
+
+    .article-detail__inner {
+        @include breakpoint(lg) {
+            width: calc( 100% / 2 - 20px );
+        }
+    }
+
+}
+.article-detail__inner {
+}
+.article-detail__inner-img {
+}
+.article-detail__inner-tag {
+}
+.article-detail__inner-date {
+}
+.article-detail__inner-title {
+}
+.article-detail__inner-desc {
+}
+.blog__list-pagination {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #262626;
+    padding: 20px 50px;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid #262626;
+    border-radius: 64px;
+    width: fit-content;
+    cursor: pointer;
+}
+.blog-page__sidebar {
+    display: flex;
+    flex-direction: column;
+    order: -1;
+
+    @include breakpoint(lg) {
+        order: unset;
+        width: calc( 100% / 12 * 4 );
+    }
+
+}
+.blog-page__filter {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.blog-page__filter-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #262626;
+    margin-bottom: 12px;
+}
+.blog-page__filter-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.blog-page__filter-item {
+    margin-bottom: 12px;
+    margin-right: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    padding: 12px 20px;
+    color: #262626;
+    border: 1px solid #262626;
+    border-radius: 64px;
+    width: fit-content;
+    cursor: pointer;
+}
