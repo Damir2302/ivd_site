@@ -10,9 +10,9 @@ block main
     .contacts-page
 
         include components/_hero
-        +hero('business-hand-with-mobile-phone.jpg', 'Контакты')
+        +hero('business-hand-with-mobile-phone.jpg', 'Контакты', 'Контакты')
 
-        section.section-page
+        section
 
             .container
 
@@ -27,11 +27,34 @@ block main
                         .contacts__block-item
                             span e-mail
                             a(href="mailto:info@ivdconsult.ru") info@ivdconsult.ru
-                        
+
                         .contacts__block-item
                             span Адрес
                             p Москва, Тетеринский переулок, дом 12, стр. 2, офис 211
 
                     .contacts__map
                         #map(style="width: 100%; height: 100%;")
+
+        section.section-request.section-page
+
+            .container
+
+                .request__title.section-title Остались вопросы?
+                .request__subtitle Заполните форму и мы свяжемся с вами в ближайшее время
+
+                .request__form
+
+                    form
+
+                        .form-top
+                            input(type="text" name="" placeholder="Имя" required)
+                            input(type="tel" name="" placeholder="Телефон" required)
+                            input(type="email" name="" placeholder="e-mail")
+
+                        .form-bottom
+                            textarea(name="" placeholder="Комментарии")
+
+                            .form-submit
+                                button.button-style.button-style--black(type="submit") Отправить заявку
+                                p Нажимая на кнопку “отправить заявку”, вы соглашаетесь на обработку персональных данных
 

@@ -1,7 +1,14 @@
-.contacts-page section {
+.contacts-page section:not(.section-request) {
 
     @include breakpoint(xl) {
         margin-top: 60px;
+    }
+}
+
+.contacts {
+
+    @include breakpoint(md) {
+        display: flex;
     }
 }
 
@@ -9,6 +16,23 @@
     padding: 20px;
     background: #F4F4F4;
     border-radius: 10px;
+
+    @include breakpoint(md) {
+        margin-right: 20px;
+        width: calc(100% / 12 * 4 - 10px);
+    }
+
+    @include breakpoint(lg) {
+        margin-right: 30px;
+        padding: 30px;
+        width: calc(100% / 12 * 4 - 15px);
+    }
+
+    @include breakpoint(xl) {
+        margin-right: 40px;
+        padding: 50px 40px;
+        width: 373px;
+    }
 }
 
 .contacts__block-item {
@@ -16,6 +40,10 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+
+    @include breakpoint(md) {
+        margin-top: 20px;
+    }
 }
 
 .contacts__block-item:first-child {
@@ -34,10 +62,18 @@
 .contacts__block-item a {
     font-size: 16px;
     line-height: 140%;
+
+    @include breakpoint(lg) {
+        font-size: 20px;
+    }
 }
 
 .contacts__block-item:first-child a {
     font-weight: 500;
+
+    @include breakpoint(xl) {
+        font-size: 25px;
+    }
 }
 
 .contacts__map {
@@ -46,4 +82,162 @@
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        width: calc(100% / 12 * 8 - 10px);
+        height: 274px;
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 12 * 8 - 15px);
+        height: 362px;
+    }
+
+    @include breakpoint(xl) {
+        width: 787px;
+        height: 460px;
+    }
+}
+
+.section-request {
+    padding: 30px 0;
+    background: #F4F4F4;
+
+    @include breakpoint(md) {
+        padding: 60px 0;
+    }
+
+    @include breakpoint(lg) {
+        padding: 80px 0;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 120px;
+        padding: 120px 0;
+    }
+}
+
+.request__title {
+    margin-bottom: 8px;
+    max-width: 280px;
+
+    @include breakpoint(md) {
+        margin-bottom: 12px;
+        max-width: unset;
+    }
+}
+
+.request__subtitle {
+    font-size: 18px;
+    line-height: 150%;
+
+    @include breakpoint(lg) {
+        font-size: 20px;
+    }
+}
+
+.request__form {
+    margin-top: 24px;
+
+    @include breakpoint(md) {
+        margin-top: 30px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 40px;
+    }
+}
+
+.form-top {
+
+    @include breakpoint(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.form-top input {
+    margin-bottom: 10px;
+    padding: 20px 16px;
+    background: #FFFFFF;
+    border-radius: 5px;
+
+    @include breakpoint(md) {
+        width: calc(100% / 12 * 4 - (40px / 3));
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 12 * 4 - 20px);
+    }
+
+    @include breakpoint(xl) {
+        width: calc(100% / 12 * 4 - (80px / 3));
+    }
+}
+
+.form-top input::placeholder,
+.form-bottom textarea::placeholder {
+    text-transform: uppercase;
+}
+
+.form-bottom {
+
+    @include breakpoint(md) {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 40px;
+    }
+}
+
+.form-bottom textarea {
+    margin-bottom: 20px;
+    padding: 20px 16px;
+    background: #FFFFFF;
+    height: 132px;
+    border-radius: 5px;
+
+    @include breakpoint(md) {
+        width: calc(100% / 12 * 8 - 10px);
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 12 * 7 - 20px);
+    }
+}
+
+.form-submit {
+
+    @include breakpoint(md) {
+        width: calc(100% / 12 * 4 - 10px);
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 12 * 5 - 20px);
+    }
+}
+
+.form-submit button {
+    margin-bottom: 16px;
+    padding: 20px 31px;
+
+    @include breakpoint(lg) {
+        margin-bottom: 12px;
+        padding: 20px 40px;
+    }
+}
+
+.form-submit p {
+    font-size: 12px;
+    line-height: 15px;
+    color: #959595;
+
+    @include breakpoint(lg) {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
