@@ -54,6 +54,29 @@
 .article-detail__inner {
 }
 .article-detail__inner-img {
+
+    @include breakpoint(md) {
+        max-height: 146px;
+        min-height: 146px;
+    }
+
+    @include breakpoint(lg) {
+        min-height: 200px;
+        max-height: 200px;
+    }
+    
+    @include breakpoint(xl) {
+        min-height: 253px;
+        max-height: 253px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
 }
 .article-detail__inner-tag {
 }

@@ -262,14 +262,16 @@
 .table {
 	border: 1px solid #f2f2f2;
 	border-radius: 12px;
-	
     overflow-x: auto;
     width: 100%;
 
+	@include breakpoint(lg) {
+		overflow-x: hidden;
+	}
 }
 
 .table-wrapper {
-    min-width: 1200px;
+    min-width: 800px;
     overflow: hidden;
 }
 
