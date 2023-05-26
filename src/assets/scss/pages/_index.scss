@@ -2,6 +2,7 @@
     margin: 0;
     height: 100vh;
     min-height: 540px;
+    max-height: 1200px;
 }
 
 .hero__slider {
@@ -418,7 +419,8 @@
     position: relative;
 
     @include breakpoint(xl) {
-        background-position: top right;
+        background-position: 50%;
+        background-size: cover;
     }
 }
 
